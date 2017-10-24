@@ -1,0 +1,65 @@
+{% extends 'partials/base_collection.html.twig' %}
+
+
+{% block content %}
+
+{{ content }}
+
+{% if page.header.mediahead %}
+<h2>{{ page.header.mediahead }}</h2>
+{% endif %}
+
+{% if page.header.mediaitems %}
+  <section class="p-grid2">
+     {% for mediaitem in page.header.mediaitems %}
+
+         <article class="item">
+         <!-- <div class="pik"> -->
+					 {{ mediaitem.frame }}
+         <!-- </div> -->
+         <div class="words">
+           <p class="title">{{ mediaitem.hed }}</p>
+           <p class="sub">{{ mediaitem.dek }}</p>
+         </article>
+
+     {% endfor %}
+  </section>
+{% endif %}
+
+{% if page.header.itemhead %}
+<h2>{{ page.header.itemhead }}</h2>
+{% endif %}
+
+{% if page.header.items %}
+  <section class="p-grid">
+     {% for item in page.header.items %}
+
+         <article class="item">
+         <a href="{{ item.link }}"><div class="pik">
+					 {{ page.media[item.image].grayscale.html() }}
+         </div></a>
+         <div class="words">
+           <a href="{{ item.link }}"><p class="title">{{ item.hed }}</a></p>
+           <p class="sub">{{ item.dek }}</p>
+         </article>
+
+     {% endfor %}
+  </section>
+{% endif %}
+
+
+
+  {% if page.header.listhead %}
+  <h3>{{ page.header.listhead }}</h3>
+  {% endif %}
+
+
+  {% if page.header.listlinks %}
+  <ul class="list2">
+  {% for listlink in page.header.listlinks %}
+  <li><a href="{{ listlink.link }}">{{ listlink.name }}</a></li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% endblock %}

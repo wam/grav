@@ -1,0 +1,13 @@
+name: Personal
+version: 0.1.0
+description: it's personal
+icon: rebel
+author:
+  name: softpunch
+  email: ryan.t.little@gmail.com
+homepage: https://github.com/softpunch/grav-theme-personal
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/softpunch/grav-theme-personal/issues
+readme: https://github.com/softpunch/grav-theme-personal/blob/develop/README.md
+license: MIT
