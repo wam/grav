@@ -47,11 +47,11 @@ class __TwigTemplate_e1b549940989296e16293e56847519b0dd040b9e5e7d2769c93cd0d4729
             <!-- ⊕ ⊞ + ✚ -->
           </a>
         <ul>
-          <li><a href=\"#\">about</a></li>
+          <li><a href=\"/about\">about</a></li>
           <li><a href=\"/projects\">projects</a></li>
           <li><a href=\"/writing\">writing</a></li>
           <li><a href=\"/music\">music</a></li>
-          <li><a href=\"#\">blog</a></li>
+          <li><a href=\"/\">blog</a></li>
 
           <!-- <span class=\"nav-symbol\">↳ </span> -->
         </ul>
@@ -115,11 +115,11 @@ class __TwigTemplate_e1b549940989296e16293e56847519b0dd040b9e5e7d2769c93cd0d4729
             <!-- ⊕ ⊞ + ✚ -->
           </a>
         <ul>
-          <li><a href=\"#\">about</a></li>
+          <li><a href=\"/about\">about</a></li>
           <li><a href=\"/projects\">projects</a></li>
           <li><a href=\"/writing\">writing</a></li>
           <li><a href=\"/music\">music</a></li>
-          <li><a href=\"#\">blog</a></li>
+          <li><a href=\"/\">blog</a></li>
 
           <!-- <span class=\"nav-symbol\">↳ </span> -->
         </ul>

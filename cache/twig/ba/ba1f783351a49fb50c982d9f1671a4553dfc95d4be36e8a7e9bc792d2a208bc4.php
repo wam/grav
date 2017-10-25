@@ -8,7 +8,7 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("partials/base_collection.html.twig", "collection.html.twig", 1);
+        $this->parent = $this->loadTemplate("partials/base_page.html.twig", "collection.html.twig", 1);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -16,63 +16,70 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
 
     protected function doGetParent(array $context)
     {
-        return "partials/base_collection.html.twig";
+        return "partials/base_page.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+        // line 3
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/collection.css", 1 => 105), "method");
+        // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 4
+    // line 5
     public function block_content($context, array $blocks = array())
     {
-        // line 5
+        // line 6
         echo "
 ";
-        // line 6
+        // line 7
         echo ($context["content"] ?? null);
         echo "
 
 ";
-        // line 8
+        // line 9
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "mediahead", array())) {
-            // line 9
+            // line 10
             echo "<h2>";
             echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "mediahead", array());
             echo "</h2>
 ";
         }
-        // line 11
+        // line 12
         echo "
 ";
-        // line 12
+        // line 13
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "mediaitems", array())) {
-            // line 13
+            // line 14
             echo "  <section class=\"p-grid2\">
      ";
-            // line 14
+            // line 15
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "mediaitems", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["mediaitem"]) {
-                // line 15
+                // line 16
                 echo "
-         <article class=\"item\">
-         <!-- <div class=\"pik\"> -->
-\t\t\t\t\t ";
+         <article class=\"item2\">
+          <div class=\"pik2b\" style=\"background-image:url(";
                 // line 18
+                echo $this->getAttribute($context["mediaitem"], "image", array());
+                echo ");\">
+            ";
+                // line 19
                 echo $this->getAttribute($context["mediaitem"], "frame", array());
                 echo "
-         <!-- </div> -->
-         <div class=\"words\">
-           <p class=\"title\">";
-                // line 21
+          </div>
+          <div class=\"words\">
+            <p class=\"title\">";
+                // line 22
                 echo $this->getAttribute($context["mediaitem"], "hed", array());
                 echo "</p>
-           <p class=\"sub\">";
-                // line 22
+            <p class=\"sub\">";
+                // line 23
                 echo $this->getAttribute($context["mediaitem"], "dek", array());
                 echo "</p>
+          </div>
          </article>
 
      ";
@@ -80,56 +87,57 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mediaitem'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 26
+            // line 28
             echo "  </section>
 ";
         }
-        // line 28
+        // line 30
         echo "
 ";
-        // line 29
+        // line 31
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "itemhead", array())) {
-            // line 30
+            // line 32
             echo "<h2>";
             echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "itemhead", array());
             echo "</h2>
 ";
         }
-        // line 32
+        // line 34
         echo "
 ";
-        // line 33
+        // line 35
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "items", array())) {
-            // line 34
+            // line 36
             echo "  <section class=\"p-grid\">
      ";
-            // line 35
+            // line 37
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "items", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-                // line 36
+                // line 38
                 echo "
          <article class=\"item\">
          <a href=\"";
-                // line 38
+                // line 40
                 echo $this->getAttribute($context["item"], "link", array());
                 echo "\"><div class=\"pik\">
 \t\t\t\t\t ";
-                // line 39
-                echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute($context["item"], "image", array()), array(), "array"), "grayscale", array()), "html", array(), "method");
+                // line 41
+                echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute($context["item"], "image", array()), array(), "array"), "html", array(), "method");
                 echo "
          </div></a>
          <div class=\"words\">
            <a href=\"";
-                // line 42
+                // line 44
                 echo $this->getAttribute($context["item"], "link", array());
                 echo "\"><p class=\"title\">";
                 echo $this->getAttribute($context["item"], "hed", array());
                 echo "</a></p>
            <p class=\"sub\">";
-                // line 43
+                // line 45
                 echo $this->getAttribute($context["item"], "dek", array());
                 echo "</p>
+         </div>
          </article>
 
      ";
@@ -137,37 +145,37 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 47
+            // line 50
             echo "  </section>
 ";
         }
-        // line 49
+        // line 52
         echo "
 
 
   ";
-        // line 52
+        // line 55
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "listhead", array())) {
-            // line 53
+            // line 56
             echo "  <h3>";
             echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "listhead", array());
             echo "</h3>
   ";
         }
-        // line 55
+        // line 58
         echo "
 
   ";
-        // line 57
+        // line 60
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "listlinks", array())) {
-            // line 58
+            // line 61
             echo "  <ul class=\"list2\">
   ";
-            // line 59
+            // line 62
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "listlinks", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["listlink"]) {
-                // line 60
+                // line 63
                 echo "  <li><a href=\"";
                 echo $this->getAttribute($context["listlink"], "link", array());
                 echo "\">";
@@ -178,12 +186,28 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['listlink'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 62
+            // line 65
             echo "  </ul>
   ";
         }
-        // line 64
+        // line 67
         echo "
+  <svg>
+    <filter id=\"grayscale-filter\">
+      <feColorMatrix type=\"saturate\" values=\"0\"/>
+    </filter>
+  </svg>
+
+  <svg>
+    <filter id=\"colorize\" color-interpolation-filters=\"sRGB\">
+      <feColorMatrix type=\"matrix\"
+       values=\"0.251 0 0 0 0.749
+               0.75 0 0 0 0.25
+               0.75 0 0 0 0.25
+               0 0 0 1 0\" />
+    </filter>
+  </svg>
+
   ";
     }
 
@@ -199,7 +223,7 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
 
     public function getDebugInfo()
     {
-        return array (  186 => 64,  182 => 62,  171 => 60,  167 => 59,  164 => 58,  162 => 57,  158 => 55,  152 => 53,  150 => 52,  145 => 49,  141 => 47,  131 => 43,  125 => 42,  119 => 39,  115 => 38,  111 => 36,  107 => 35,  104 => 34,  102 => 33,  99 => 32,  93 => 30,  91 => 29,  88 => 28,  84 => 26,  74 => 22,  70 => 21,  64 => 18,  59 => 15,  55 => 14,  52 => 13,  50 => 12,  47 => 11,  41 => 9,  39 => 8,  34 => 6,  31 => 5,  28 => 4,  11 => 1,);
+        return array (  194 => 67,  190 => 65,  179 => 63,  175 => 62,  172 => 61,  170 => 60,  166 => 58,  160 => 56,  158 => 55,  153 => 52,  149 => 50,  138 => 45,  132 => 44,  126 => 41,  122 => 40,  118 => 38,  114 => 37,  111 => 36,  109 => 35,  106 => 34,  100 => 32,  98 => 31,  95 => 30,  91 => 28,  80 => 23,  76 => 22,  70 => 19,  66 => 18,  62 => 16,  58 => 15,  55 => 14,  53 => 13,  50 => 12,  44 => 10,  42 => 9,  37 => 7,  34 => 6,  31 => 5,  27 => 1,  25 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -212,8 +236,9 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends 'partials/base_collection.html.twig' %}
+        return new Twig_Source("{% extends 'partials/base_page.html.twig' %}
 
+{% do assets.addCss('theme://css/collection.css', 105) %}
 
 {% block content %}
 
@@ -227,13 +252,14 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
   <section class=\"p-grid2\">
      {% for mediaitem in page.header.mediaitems %}
 
-         <article class=\"item\">
-         <!-- <div class=\"pik\"> -->
-\t\t\t\t\t {{ mediaitem.frame }}
-         <!-- </div> -->
-         <div class=\"words\">
-           <p class=\"title\">{{ mediaitem.hed }}</p>
-           <p class=\"sub\">{{ mediaitem.dek }}</p>
+         <article class=\"item2\">
+          <div class=\"pik2b\" style=\"background-image:url({{ mediaitem.image }});\">
+            {{ mediaitem.frame }}
+          </div>
+          <div class=\"words\">
+            <p class=\"title\">{{ mediaitem.hed }}</p>
+            <p class=\"sub\">{{ mediaitem.dek }}</p>
+          </div>
          </article>
 
      {% endfor %}
@@ -250,11 +276,12 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
 
          <article class=\"item\">
          <a href=\"{{ item.link }}\"><div class=\"pik\">
-\t\t\t\t\t {{ page.media[item.image].grayscale.html() }}
+\t\t\t\t\t {{ page.media[item.image].html() }}
          </div></a>
          <div class=\"words\">
            <a href=\"{{ item.link }}\"><p class=\"title\">{{ item.hed }}</a></p>
            <p class=\"sub\">{{ item.dek }}</p>
+         </div>
          </article>
 
      {% endfor %}
@@ -275,6 +302,22 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
   {% endfor %}
   </ul>
   {% endif %}
+
+  <svg>
+    <filter id=\"grayscale-filter\">
+      <feColorMatrix type=\"saturate\" values=\"0\"/>
+    </filter>
+  </svg>
+
+  <svg>
+    <filter id=\"colorize\" color-interpolation-filters=\"sRGB\">
+      <feColorMatrix type=\"matrix\"
+       values=\"0.251 0 0 0 0.749
+               0.75 0 0 0 0.25
+               0.75 0 0 0 0.25
+               0 0 0 1 0\" />
+    </filter>
+  </svg>
 
   {% endblock %}
 ", "collection.html.twig", "/Users/brendanpolmer/grav/user/themes/personal/templates/collection.html.twig");

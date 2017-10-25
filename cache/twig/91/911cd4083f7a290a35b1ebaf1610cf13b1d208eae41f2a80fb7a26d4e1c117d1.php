@@ -1,7 +1,7 @@
 <?php
 
-/* partials/base_collection.html.twig */
-class __TwigTemplate_b3026eebfd9f284dc0a1aa93671ceb22188d3753152a8a3bb579cbdfb78c0928 extends Twig_Template
+/* partials/base_page.html.twig */
+class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7b6b66 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -81,7 +81,7 @@ class __TwigTemplate_b3026eebfd9f284dc0a1aa93671ceb22188d3753152a8a3bb579cbdfb78
         echo "</title>
     ";
         // line 8
-        $this->loadTemplate("partials/metadata.html.twig", "partials/base_collection.html.twig", 8)->display($context);
+        $this->loadTemplate("partials/metadata.html.twig", "partials/base_page.html.twig", 8)->display($context);
         // line 9
         echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\">
     <link rel=\"icon\" type=\"image/png\" href=\"";
@@ -127,10 +127,8 @@ class __TwigTemplate_b3026eebfd9f284dc0a1aa93671ceb22188d3753152a8a3bb579cbdfb78
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/header.css", 1 => 101), "method");
         // line 20
-        echo "        ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/collection.css", 1 => 105), "method");
-        // line 21
-        echo "
+        echo "        
+
     ";
     }
 
@@ -152,13 +150,13 @@ class __TwigTemplate_b3026eebfd9f284dc0a1aa93671ceb22188d3753152a8a3bb579cbdfb78
             <!-- <div id=\"logo\"> -->
                 ";
         // line 37
-        $this->loadTemplate("partials/name_logo.html.twig", "partials/base_collection.html.twig", 37)->display($context);
+        $this->loadTemplate("partials/name_logo.html.twig", "partials/base_page.html.twig", 37)->display($context);
         // line 38
         echo "
             <!-- </div> -->
                 ";
         // line 40
-        $this->loadTemplate("partials/top_nav.html.twig", "partials/base_collection.html.twig", 40)->display($context);
+        $this->loadTemplate("partials/top_nav.html.twig", "partials/base_page.html.twig", 40)->display($context);
         // line 41
         echo "        </header>
         ";
@@ -184,7 +182,7 @@ class __TwigTemplate_b3026eebfd9f284dc0a1aa93671ceb22188d3753152a8a3bb579cbdfb78
 
     public function getTemplateName()
     {
-        return "partials/base_collection.html.twig";
+        return "partials/base_page.html.twig";
     }
 
     public function isTraitable()
@@ -194,7 +192,7 @@ class __TwigTemplate_b3026eebfd9f284dc0a1aa93671ceb22188d3753152a8a3bb579cbdfb78
 
     public function getDebugInfo()
     {
-        return array (  179 => 55,  176 => 54,  171 => 48,  168 => 47,  163 => 41,  161 => 40,  157 => 38,  155 => 37,  151 => 35,  148 => 34,  144 => 27,  141 => 26,  138 => 25,  133 => 21,  130 => 20,  127 => 19,  125 => 18,  121 => 16,  118 => 15,  110 => 28,  108 => 25,  102 => 23,  100 => 15,  93 => 11,  89 => 10,  86 => 9,  84 => 8,  76 => 7,  73 => 6,  70 => 5,  63 => 59,  61 => 54,  55 => 50,  53 => 47,  47 => 43,  45 => 34,  40 => 32,  37 => 31,  35 => 5,  30 => 3,  27 => 2,  25 => 1,);
+        return array (  177 => 55,  174 => 54,  169 => 48,  166 => 47,  161 => 41,  159 => 40,  155 => 38,  153 => 37,  149 => 35,  146 => 34,  142 => 27,  139 => 26,  136 => 25,  130 => 20,  127 => 19,  125 => 18,  121 => 16,  118 => 15,  110 => 28,  108 => 25,  102 => 23,  100 => 15,  93 => 11,  89 => 10,  86 => 9,  84 => 8,  76 => 7,  73 => 6,  70 => 5,  63 => 59,  61 => 54,  55 => 50,  53 => 47,  47 => 43,  45 => 34,  40 => 32,  37 => 31,  35 => 5,  30 => 3,  27 => 2,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -226,7 +224,7 @@ class __TwigTemplate_b3026eebfd9f284dc0a1aa93671ceb22188d3753152a8a3bb579cbdfb78
         <!-- my css additions -->
         {% do assets.addCss('theme://css/main-body.css', 102) %}
         {% do assets.addCss('theme://css/header.css', 101) %}
-        {% do assets.addCss('theme://css/collection.css', 105) %}
+        
 
     {% endblock %}
     {{ assets.css() }}
@@ -268,6 +266,6 @@ class __TwigTemplate_b3026eebfd9f284dc0a1aa93671ceb22188d3753152a8a3bb579cbdfb78
 
 </body>
 </html>
-", "partials/base_collection.html.twig", "/Users/brendanpolmer/grav/user/themes/personal/templates/partials/base_collection.html.twig");
+", "partials/base_page.html.twig", "/Users/brendanpolmer/grav/user/themes/personal/templates/partials/base_page.html.twig");
     }
 }
