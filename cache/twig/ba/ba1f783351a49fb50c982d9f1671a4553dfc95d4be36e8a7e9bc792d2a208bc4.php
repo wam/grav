@@ -60,8 +60,8 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
             foreach ($context['_seq'] as $context["_key"] => $context["mediaitem"]) {
                 // line 16
                 echo "
-         <article class=\"item2\">
-          <div class=\"pik2b\" style=\"background-image:url(";
+         <article class=\"item2\" >
+          <div tabindex=\"0\" class=\"pik2b\" style=\"background-image:url(";
                 // line 18
                 echo $this->getAttribute($context["mediaitem"], "image", array());
                 echo ");\">
@@ -108,7 +108,7 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
         // line 35
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "items", array())) {
             // line 36
-            echo "  <section class=\"p-grid\">
+            echo "  <section class=\"p-grid\" >
      ";
             // line 37
             $context['_parent'] = $context;
@@ -116,17 +116,17 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
             foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
                 // line 38
                 echo "
-         <article class=\"item\">
+         <article class=\"item\" >
          <a href=\"";
                 // line 40
                 echo $this->getAttribute($context["item"], "link", array());
-                echo "\"><div class=\"pik\">
+                echo "\"><div class=\"pik\" tabindex=\"0\">
 \t\t\t\t\t ";
                 // line 41
                 echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute($context["item"], "image", array()), array(), "array"), "html", array(), "method");
                 echo "
          </div></a>
-         <div class=\"words\">
+         <div class=\"words\" >
            <a href=\"";
                 // line 44
                 echo $this->getAttribute($context["item"], "link", array());
@@ -198,13 +198,26 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
     </filter>
   </svg>
 
+  <!-- link / svg filter color:
+  HSL: 0° 50% 50%; RGB: 191 64 64; Hex: #BF4040; RGBA: 0.749 0.250 0.250 0 -->
+
   <svg>
-    <filter id=\"colorize\" color-interpolation-filters=\"sRGB\">
+    <filter id=\"colorize\" color-interpolation-filters=\"sRGB\" >
       <feColorMatrix type=\"matrix\"
        values=\"0.251 0 0 0 0.749
                0.75 0 0 0 0.25
                0.75 0 0 0 0.25
                0 0 0 1 0\" />
+    </filter>
+  </svg>
+
+  <svg>
+    <filter id=\"contrast\">
+      <feComponentTransfer>
+        <feFuncR type=\"linear\" slope=\"2\" intercept=\"-(0.5 * 1) + 0.5\"/>
+        <feFuncG type=\"linear\" slope=\"2\" intercept=\"-(0.5 * 1) + 0.5\"/>
+        <feFuncB type=\"linear\" slope=\"2\" intercept=\"-(0.5 * 1) + 0.5\"/>
+      </feComponentTransfer>
     </filter>
   </svg>
 
@@ -252,8 +265,8 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
   <section class=\"p-grid2\">
      {% for mediaitem in page.header.mediaitems %}
 
-         <article class=\"item2\">
-          <div class=\"pik2b\" style=\"background-image:url({{ mediaitem.image }});\">
+         <article class=\"item2\" >
+          <div tabindex=\"0\" class=\"pik2b\" style=\"background-image:url({{ mediaitem.image }});\">
             {{ mediaitem.frame }}
           </div>
           <div class=\"words\">
@@ -271,14 +284,14 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
 {% endif %}
 
 {% if page.header.items %}
-  <section class=\"p-grid\">
+  <section class=\"p-grid\" >
      {% for item in page.header.items %}
 
-         <article class=\"item\">
-         <a href=\"{{ item.link }}\"><div class=\"pik\">
+         <article class=\"item\" >
+         <a href=\"{{ item.link }}\"><div class=\"pik\" tabindex=\"0\">
 \t\t\t\t\t {{ page.media[item.image].html() }}
          </div></a>
-         <div class=\"words\">
+         <div class=\"words\" >
            <a href=\"{{ item.link }}\"><p class=\"title\">{{ item.hed }}</a></p>
            <p class=\"sub\">{{ item.dek }}</p>
          </div>
@@ -309,13 +322,26 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
     </filter>
   </svg>
 
+  <!-- link / svg filter color:
+  HSL: 0° 50% 50%; RGB: 191 64 64; Hex: #BF4040; RGBA: 0.749 0.250 0.250 0 -->
+
   <svg>
-    <filter id=\"colorize\" color-interpolation-filters=\"sRGB\">
+    <filter id=\"colorize\" color-interpolation-filters=\"sRGB\" >
       <feColorMatrix type=\"matrix\"
        values=\"0.251 0 0 0 0.749
                0.75 0 0 0 0.25
                0.75 0 0 0 0.25
                0 0 0 1 0\" />
+    </filter>
+  </svg>
+
+  <svg>
+    <filter id=\"contrast\">
+      <feComponentTransfer>
+        <feFuncR type=\"linear\" slope=\"2\" intercept=\"-(0.5 * 1) + 0.5\"/>
+        <feFuncG type=\"linear\" slope=\"2\" intercept=\"-(0.5 * 1) + 0.5\"/>
+        <feFuncB type=\"linear\" slope=\"2\" intercept=\"-(0.5 * 1) + 0.5\"/>
+      </feComponentTransfer>
     </filter>
   </svg>
 

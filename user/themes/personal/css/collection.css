@@ -108,7 +108,8 @@ h2 {
   filter: url(#grayscale-filter);
 }
 .pik2b:hover, .pik2b:active, .pik2b:focus {
-  filter:none;
+  /*filter:none;*/
+  filter: url(#grayscale-filter) url(#contrast) url(#colorize);
 }
 
 .pik2b iframe {
@@ -116,10 +117,6 @@ h2 {
   top: 0; bottom: 0; left: 0; right: 0;
   width: 100%;
   height: 100%;
-}
-
-.colorz:hover, .colorz:active, .colorz:focus {
-  filter: url(#colorize);
 }
 
 /*image container*/
@@ -141,7 +138,8 @@ h2 {
 }
 
 .pik:hover, .pik:active, .pik:focus {
-  filter: url(#colorize);
+  /*filter: url(#grayscale-filter) url(#colorize);*/
+  filter: url(#grayscale-filter) url(#contrast) url(#colorize);
 
   /*filter:none;*/
 }
