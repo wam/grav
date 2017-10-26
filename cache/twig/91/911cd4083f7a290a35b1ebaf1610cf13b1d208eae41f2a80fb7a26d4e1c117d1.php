@@ -33,34 +33,34 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
 ";
         // line 5
         $this->displayBlock('head', $context, $blocks);
-        // line 31
+        // line 30
         echo "</head>
 <body id=\"top\" class=\"";
-        // line 32
+        // line 31
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "body_classes", array());
         echo "\">
     <!-- <div id=\"sb-site\"> -->
         ";
-        // line 34
+        // line 33
         $this->displayBlock('header', $context, $blocks);
-        // line 43
+        // line 42
         echo "
         <br><br>
 
         <div class=\"cont\">
         ";
-        // line 47
+        // line 46
         $this->displayBlock('content', $context, $blocks);
-        // line 50
+        // line 49
         echo "        </div>
 
 
-
         ";
-        // line 54
+        // line 52
         $this->displayBlock('footer', $context, $blocks);
-        // line 59
+        // line 57
         echo "
+
 </body>
 </html>
 ";
@@ -94,19 +94,18 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
         echo "\" />
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css\">
 
-
     ";
-        // line 15
+        // line 14
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 23
+        // line 22
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "css", array(), "method");
         echo "
 
     ";
-        // line 25
+        // line 24
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 28
+        // line 27
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(), "method");
         echo "
@@ -114,66 +113,66 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
 ";
     }
 
-    // line 15
+    // line 14
     public function block_stylesheets($context, array $blocks = array())
     {
-        // line 16
+        // line 15
         echo "
         <!-- my css additions -->
         ";
-        // line 18
+        // line 17
         $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/main-body.css", 1 => 102), "method");
-        // line 19
+        // line 18
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/header.css", 1 => 101), "method");
-        // line 20
+        // line 19
         echo "
 
     ";
     }
 
-    // line 25
+    // line 24
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 26
+        // line 25
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/modernizr.custom.71422.js", 1 => 100), "method");
-        // line 27
+        // line 26
         echo "    ";
     }
 
-    // line 34
+    // line 33
     public function block_header($context, array $blocks = array())
     {
-        // line 35
+        // line 34
         echo "        <header id=\"header\">
             <!-- <div id=\"logo\"> -->
                 ";
+        // line 36
+        $this->loadTemplate("partials/name_logo.html.twig", "partials/base_page.html.twig", 36)->display($context);
         // line 37
-        $this->loadTemplate("partials/name_logo.html.twig", "partials/base_page.html.twig", 37)->display($context);
-        // line 38
         echo "
             <!-- </div> -->
                 ";
+        // line 39
+        $this->loadTemplate("partials/top_nav.html.twig", "partials/base_page.html.twig", 39)->display($context);
         // line 40
-        $this->loadTemplate("partials/top_nav.html.twig", "partials/base_page.html.twig", 40)->display($context);
-        // line 41
         echo "        </header>
         ";
     }
 
-    // line 47
+    // line 46
     public function block_content($context, array $blocks = array())
     {
-        // line 48
+        // line 47
         echo "        <p>stuff!</p>
         ";
     }
 
-    // line 54
+    // line 52
     public function block_footer($context, array $blocks = array())
     {
-        // line 55
+        // line 53
         echo "        <footer id=\"footer\">
               <p>YR FOOTR.</p>
         </footer>
@@ -192,7 +191,7 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
 
     public function getDebugInfo()
     {
-        return array (  177 => 55,  174 => 54,  169 => 48,  166 => 47,  161 => 41,  159 => 40,  155 => 38,  153 => 37,  149 => 35,  146 => 34,  142 => 27,  139 => 26,  136 => 25,  130 => 20,  127 => 19,  125 => 18,  121 => 16,  118 => 15,  110 => 28,  108 => 25,  102 => 23,  100 => 15,  93 => 11,  89 => 10,  86 => 9,  84 => 8,  76 => 7,  73 => 6,  70 => 5,  63 => 59,  61 => 54,  55 => 50,  53 => 47,  47 => 43,  45 => 34,  40 => 32,  37 => 31,  35 => 5,  30 => 3,  27 => 2,  25 => 1,);
+        return array (  176 => 53,  173 => 52,  168 => 47,  165 => 46,  160 => 40,  158 => 39,  154 => 37,  152 => 36,  148 => 34,  145 => 33,  141 => 26,  138 => 25,  135 => 24,  129 => 19,  126 => 18,  124 => 17,  120 => 15,  117 => 14,  109 => 27,  107 => 24,  101 => 22,  99 => 14,  93 => 11,  89 => 10,  86 => 9,  84 => 8,  76 => 7,  73 => 6,  70 => 5,  62 => 57,  60 => 52,  55 => 49,  53 => 46,  47 => 42,  45 => 33,  40 => 31,  37 => 30,  35 => 5,  30 => 3,  27 => 2,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -217,7 +216,6 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
     <link rel=\"icon\" type=\"image/png\" href=\"{{ url('theme://images/favicon.ico') }}\" />
     <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css\">
-
 
     {% block stylesheets %}
 
@@ -257,12 +255,12 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
         </div>
 
 
-
         {% block footer %}
         <footer id=\"footer\">
               <p>YR FOOTR.</p>
         </footer>
         {% endblock %}
+
 
 </body>
 </html>

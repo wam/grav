@@ -1,8 +1,18 @@
 body {
   --linkColor: hsl(0, 50%, 50%);
+  --linkColorLight: hsla(0, 50%, 50%, 0.4);
   --mainColor: hsl(208, 50%, 50%);
+  --mainColorLight: hsl(208, 50%, 75%);
   font-family: 'Avenir Next';
   background-color: var(--mainColor);
+}
+
+::-moz-selection {
+  background: var(--linkColorLight);
+}
+
+::selection {
+  background: var(--linkColorLight);
 }
 
 a {

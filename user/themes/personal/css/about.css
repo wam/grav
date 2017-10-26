@@ -16,8 +16,12 @@ h2 {
 .about {
   /*letter-spacing: -.05em;*/
   /*line-height: 1.5;*/
-  line-height: 1.5;
+  background: var(--mainColorLight);
+  line-height: 1.7;
   margin: 1rem 4rem 4rem 4rem;
-  font-size: 1rem;
-  max-width: 30em;
+  padding: 1rem 4rem 1rem 4rem;
+  border-radius: 3px;
+
+  font-size: 1.1rem;
+  max-width: 38em;
 }

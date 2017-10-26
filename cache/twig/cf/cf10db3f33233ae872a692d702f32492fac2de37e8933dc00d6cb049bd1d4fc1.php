@@ -70,7 +70,7 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
       <script>
       ";
         // line 68
-        $this->loadTemplate("partials/scribbler_script.html.twig", "partials/base.html.twig", 68)->display($context);
+        $this->loadTemplate("partials/scribbler_script2.html.twig", "partials/base.html.twig", 68)->display($context);
         // line 69
         echo "      </script>
 
@@ -199,7 +199,7 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
     public function block_body($context, array $blocks = array())
     {
         // line 53
-        echo "        <article class=\"pa3 pa5-ns ";
+        echo "        <article class=\"bgg pa3 pa5-ns ";
         echo ($context["class"] ?? null);
         echo "\">
         <h2 class=\"f2\">";
@@ -308,7 +308,7 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
         {% block showcase %}{% endblock %}
 
         {% block body %}
-        <article class=\"pa3 pa5-ns {{ class }}\">
+        <article class=\"bgg pa3 pa5-ns {{ class }}\">
         <h2 class=\"f2\">{{ page.header.posting }}</h2>
         <div class=\"measure lh-copy\">
             {% block content %}{% endblock %}
@@ -323,7 +323,7 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
         {% endblock %}
 
       <script>
-      {% include 'partials/scribbler_script.html.twig' %}
+      {% include 'partials/scribbler_script2.html.twig' %}
       </script>
 
 

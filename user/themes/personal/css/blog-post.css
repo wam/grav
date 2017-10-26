@@ -18,6 +18,14 @@
 .measure {
     max-width: 30em;
 }
+
+.bgg {
+  background: var(--mainColorLight);
+  border-radius: 3px;
+  margin: 1rem 4rem 4rem 4rem;
+  padding: 1rem 4rem 1rem 4rem;
+}
+
 @media screen and (min-width: 30em) {
     .pa5-ns {
         padding: 1rem 4rem 4rem 4rem;
