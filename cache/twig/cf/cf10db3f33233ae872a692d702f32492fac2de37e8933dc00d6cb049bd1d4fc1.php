@@ -57,21 +57,41 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
         $this->displayBlock('showcase', $context, $blocks);
         // line 51
         echo "
-        ";
-        // line 52
-        $this->displayBlock('body', $context, $blocks);
+        <div class=\"biopic-main\">
+          ";
+        // line 53
+        echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "ryan1-b.jpg", array(), "array"), "grayscale", array(), "method");
+        echo "
+        </div>
+
+
+
+        <!-- begin blog post block!!! -->
+
+        <!-- ";
         // line 60
-        echo "
-        ";
-        // line 61
+        $this->displayBlock('body', $context, $blocks);
+        // line 67
+        echo " -->
+
+        <!-- end blog post block!!!! -->
+
+
+        <!-- begin footer -->
+
+        <!-- ";
+        // line 74
         $this->displayBlock('footer', $context, $blocks);
-        // line 66
-        echo "
+        // line 78
+        echo " -->
+
+        <!-- end footer -->
+
       <script>
       ";
-        // line 68
-        $this->loadTemplate("partials/scribbler_script2.html.twig", "partials/base.html.twig", 68)->display($context);
-        // line 69
+        // line 83
+        $this->loadTemplate("partials/scribbler_script2.html.twig", "partials/base.html.twig", 83)->display($context);
+        // line 84
         echo "      </script>
 
 
@@ -97,7 +117,7 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
         // line 8
         $this->loadTemplate("partials/metadata.html.twig", "partials/base.html.twig", 8)->display($context);
         // line 9
-        echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\">
+        echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <link rel=\"icon\" type=\"image/png\" href=\"";
         // line 10
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicon.png");
@@ -195,36 +215,36 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
     {
     }
 
-    // line 52
+    // line 60
     public function block_body($context, array $blocks = array())
     {
-        // line 53
+        // line 61
         echo "        <article class=\"bgg pa3 pa5-ns ";
         echo ($context["class"] ?? null);
         echo "\">
         <h2 class=\"f2\">";
-        // line 54
+        // line 62
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "posting", array());
         echo "</h2>
         <div class=\"measure lh-copy\">
             ";
-        // line 56
+        // line 64
         $this->displayBlock('content', $context, $blocks);
-        // line 57
+        // line 65
         echo "        </div>
         </article>
         ";
     }
 
-    // line 56
+    // line 64
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 61
+    // line 74
     public function block_footer($context, array $blocks = array())
     {
-        // line 62
+        // line 75
         echo "        <footer id=\"footer\">
               <p>YR FOOTR.</p>
         </footer>
@@ -243,7 +263,7 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
 
     public function getDebugInfo()
     {
-        return array (  228 => 62,  225 => 61,  220 => 56,  214 => 57,  212 => 56,  207 => 54,  202 => 53,  199 => 52,  194 => 50,  189 => 45,  187 => 44,  183 => 42,  181 => 41,  177 => 40,  173 => 38,  170 => 37,  166 => 30,  163 => 29,  160 => 28,  155 => 24,  152 => 23,  149 => 22,  146 => 21,  144 => 20,  141 => 19,  139 => 18,  136 => 17,  133 => 16,  125 => 31,  123 => 28,  117 => 26,  115 => 16,  107 => 11,  103 => 10,  100 => 9,  98 => 8,  90 => 7,  87 => 6,  84 => 5,  75 => 69,  73 => 68,  69 => 66,  67 => 61,  64 => 60,  62 => 52,  59 => 51,  57 => 50,  54 => 49,  52 => 48,  49 => 47,  47 => 37,  42 => 35,  39 => 34,  37 => 5,  32 => 3,  29 => 2,  27 => 1,);
+        return array (  248 => 75,  245 => 74,  240 => 64,  234 => 65,  232 => 64,  227 => 62,  222 => 61,  219 => 60,  214 => 50,  209 => 45,  207 => 44,  203 => 42,  201 => 41,  197 => 40,  193 => 38,  190 => 37,  186 => 30,  183 => 29,  180 => 28,  175 => 24,  172 => 23,  169 => 22,  166 => 21,  164 => 20,  161 => 19,  159 => 18,  156 => 17,  153 => 16,  145 => 31,  143 => 28,  137 => 26,  135 => 16,  127 => 11,  123 => 10,  120 => 9,  118 => 8,  110 => 7,  107 => 6,  104 => 5,  95 => 84,  93 => 83,  86 => 78,  84 => 74,  75 => 67,  73 => 60,  63 => 53,  59 => 51,  57 => 50,  54 => 49,  52 => 48,  49 => 47,  47 => 37,  42 => 35,  39 => 34,  37 => 5,  32 => 3,  29 => 2,  27 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -264,7 +284,7 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
     <meta charset=\"utf-8\" />
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
     {% include 'partials/metadata.html.twig' %}
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <link rel=\"icon\" type=\"image/png\" href=\"{{ url('theme://images/favicon.png') }}\" />
     <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css\">
@@ -307,20 +327,35 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
 
         {% block showcase %}{% endblock %}
 
-        {% block body %}
+        <div class=\"biopic-main\">
+          {{ page.media['ryan1-b.jpg'].grayscale() }}
+        </div>
+
+
+
+        <!-- begin blog post block!!! -->
+
+        <!-- {% block body %}
         <article class=\"bgg pa3 pa5-ns {{ class }}\">
         <h2 class=\"f2\">{{ page.header.posting }}</h2>
         <div class=\"measure lh-copy\">
             {% block content %}{% endblock %}
         </div>
         </article>
-        {% endblock %}
+        {% endblock %} -->
 
-        {% block footer %}
+        <!-- end blog post block!!!! -->
+
+
+        <!-- begin footer -->
+
+        <!-- {% block footer %}
         <footer id=\"footer\">
               <p>YR FOOTR.</p>
         </footer>
-        {% endblock %}
+        {% endblock %} -->
+
+        <!-- end footer -->
 
       <script>
       {% include 'partials/scribbler_script2.html.twig' %}

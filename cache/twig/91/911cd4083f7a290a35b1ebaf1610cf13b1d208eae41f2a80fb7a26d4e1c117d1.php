@@ -55,11 +55,17 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
         echo "        </div>
 
 
-        ";
-        // line 52
+
+        <!-- begin footer -->
+
+        <!-- ";
+        // line 55
         $this->displayBlock('footer', $context, $blocks);
-        // line 57
-        echo "
+        // line 59
+        echo " -->
+
+        <!-- end footer -->
+
 
 </body>
 </html>
@@ -83,7 +89,7 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
         // line 8
         $this->loadTemplate("partials/metadata.html.twig", "partials/base_page.html.twig", 8)->display($context);
         // line 9
-        echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\">
+        echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <link rel=\"icon\" type=\"image/png\" href=\"";
         // line 10
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicon.ico");
@@ -169,10 +175,10 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
         ";
     }
 
-    // line 52
+    // line 55
     public function block_footer($context, array $blocks = array())
     {
-        // line 53
+        // line 56
         echo "        <footer id=\"footer\">
               <p>YR FOOTR.</p>
         </footer>
@@ -191,7 +197,7 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
 
     public function getDebugInfo()
     {
-        return array (  176 => 53,  173 => 52,  168 => 47,  165 => 46,  160 => 40,  158 => 39,  154 => 37,  152 => 36,  148 => 34,  145 => 33,  141 => 26,  138 => 25,  135 => 24,  129 => 19,  126 => 18,  124 => 17,  120 => 15,  117 => 14,  109 => 27,  107 => 24,  101 => 22,  99 => 14,  93 => 11,  89 => 10,  86 => 9,  84 => 8,  76 => 7,  73 => 6,  70 => 5,  62 => 57,  60 => 52,  55 => 49,  53 => 46,  47 => 42,  45 => 33,  40 => 31,  37 => 30,  35 => 5,  30 => 3,  27 => 2,  25 => 1,);
+        return array (  182 => 56,  179 => 55,  174 => 47,  171 => 46,  166 => 40,  164 => 39,  160 => 37,  158 => 36,  154 => 34,  151 => 33,  147 => 26,  144 => 25,  141 => 24,  135 => 19,  132 => 18,  130 => 17,  126 => 15,  123 => 14,  115 => 27,  113 => 24,  107 => 22,  105 => 14,  99 => 11,  95 => 10,  92 => 9,  90 => 8,  82 => 7,  79 => 6,  76 => 5,  65 => 59,  63 => 55,  55 => 49,  53 => 46,  47 => 42,  45 => 33,  40 => 31,  37 => 30,  35 => 5,  30 => 3,  27 => 2,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -212,7 +218,7 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
     <meta charset=\"utf-8\" />
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
     {% include 'partials/metadata.html.twig' %}
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <link rel=\"icon\" type=\"image/png\" href=\"{{ url('theme://images/favicon.ico') }}\" />
     <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css\">
@@ -255,11 +261,16 @@ class __TwigTemplate_e4a9f8d3d54ddd2435df5f20e3336b5189b2fbb01df2b0a1011172f5bf7
         </div>
 
 
-        {% block footer %}
+
+        <!-- begin footer -->
+
+        <!-- {% block footer %}
         <footer id=\"footer\">
               <p>YR FOOTR.</p>
         </footer>
-        {% endblock %}
+        {% endblock %} -->
+
+        <!-- end footer -->
 
 
 </body>

@@ -31,20 +31,28 @@ class __TwigTemplate_fe64971f42a96aba8638538a6746c31c78475ddf894745790e94266a17f
     public function block_content($context, array $blocks = array())
     {
         // line 6
+        echo "  <div class=\"biopic\">
+    ";
+        // line 7
+        echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "ryan1-b.jpg", array(), "array"), "grayscale", array(), "method");
+        echo "
+  </div>
+  ";
+        // line 9
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "hed", array())) {
-            // line 7
-            echo "<h2>";
+            // line 10
+            echo "  <h2>";
             echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "hed", array());
             echo "</h2>
-";
+  ";
         }
-        // line 9
-        echo "<div class=\"about\">
-";
-        // line 10
+        // line 12
+        echo "  <div class=\"about\">
+    ";
+        // line 13
         echo ($context["content"] ?? null);
         echo "
-</div>
+  </div>
 ";
     }
 
@@ -60,7 +68,7 @@ class __TwigTemplate_fe64971f42a96aba8638538a6746c31c78475ddf894745790e94266a17f
 
     public function getDebugInfo()
     {
-        return array (  45 => 10,  42 => 9,  36 => 7,  34 => 6,  31 => 5,  27 => 1,  25 => 3,  11 => 1,);
+        return array (  53 => 13,  50 => 12,  44 => 10,  42 => 9,  37 => 7,  34 => 6,  31 => 5,  27 => 1,  25 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -78,12 +86,15 @@ class __TwigTemplate_fe64971f42a96aba8638538a6746c31c78475ddf894745790e94266a17f
 {% do assets.addCss('theme://css/about.css', 105) %}
 
 {% block content %}
-{% if page.header.hed %}
-<h2>{{ page.header.hed }}</h2>
-{% endif %}
-<div class=\"about\">
-{{ content }}
-</div>
+  <div class=\"biopic\">
+    {{ page.media['ryan1-b.jpg'].grayscale() }}
+  </div>
+  {% if page.header.hed %}
+  <h2>{{ page.header.hed }}</h2>
+  {% endif %}
+  <div class=\"about\">
+    {{ content }}
+  </div>
 {% endblock %}
 ", "about.html.twig", "/Users/brendanpolmer/grav/user/themes/personal/templates/about.html.twig");
     }

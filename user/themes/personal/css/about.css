@@ -6,22 +6,59 @@
 
 h2 {
   text-align: center;
+  /* margin: 1rem 1rem 1rem 1rem; */
 }
 
 .cont {
   width: 100%;
+  /* display: grid;
+  margin: 0 auto;
+  grid-gap: 1rem; */
 }
-
 
 .about {
   /*letter-spacing: -.05em;*/
   /*line-height: 1.5;*/
   background: var(--mainColorLight);
   line-height: 1.7;
-  margin: 1rem 4rem 4rem 4rem;
-  padding: 1rem 4rem 1rem 4rem;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 3px;
 
   font-size: 1.1rem;
   max-width: 38em;
+}
+
+.biopic {
+  display: inline-block;
+  /*actual*/
+  display: inline-flex;
+  margin: 1rem 1rem 1rem 1rem;
+  border-radius: 3px;
+  width: calc(100% - 2rem);
+  max-width: 42em;
+}
+
+
+@media screen and (min-width: 59em) {
+
+  .about {
+    /*letter-spacing: -.05em;*/
+    /*line-height: 1.5;*/
+    background: var(--mainColorLight);
+    line-height: 1.7;
+    margin: 1rem 4rem 4rem 4rem;
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 3px;
+
+    font-size: 1.1rem;
+    max-width: 38em;
+  }
+  .biopic {
+    margin: 1rem 4rem 1rem 4rem;
+    border-radius: 3px;
+    max-width: 42em;
+  }
+
+
 }

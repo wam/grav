@@ -23,7 +23,7 @@ items:
     hed: Amiri Baraka
     dek: Jazz, poetry, & politics.
   - link: https://www.tinymixtapes.com/features/david-bazan
-    image: bazan1-b.jpg
+    image: bazan1-c.jpg
     hed: David Bazan
     dek: Losing faith.
   - link: http://www.rollingstone.com/music/news/kennedy-center-honors-santana-billy-joel-and-herbie-hancock-20131209

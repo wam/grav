@@ -192,7 +192,7 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
         }
         // line 67
         echo "
-  <svg>
+  <svg width=\"0\" height=\"0\">
     <filter id=\"grayscale-filter\">
       <feColorMatrix type=\"saturate\" values=\"0\"/>
     </filter>
@@ -201,7 +201,7 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
   <!-- link / svg filter color:
   HSL: 0° 50% 50%; RGB: 191 64 64; Hex: #BF4040; RGBA: 0.749 0.250 0.250 0 -->
 
-  <svg>
+  <svg width=\"0\" height=\"0\">
     <filter id=\"colorize\" color-interpolation-filters=\"sRGB\" >
       <feColorMatrix type=\"matrix\"
        values=\"0.251 0 0 0 0.749
@@ -211,7 +211,7 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
     </filter>
   </svg>
 
-  <svg>
+  <svg width=\"0\" height=\"0\">
     <filter id=\"contrast\">
       <feComponentTransfer>
         <feFuncR type=\"linear\" slope=\"2\" intercept=\"-(0.5 * 1) + 0.5\"/>
@@ -316,7 +316,7 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
   </ul>
   {% endif %}
 
-  <svg>
+  <svg width=\"0\" height=\"0\">
     <filter id=\"grayscale-filter\">
       <feColorMatrix type=\"saturate\" values=\"0\"/>
     </filter>
@@ -325,7 +325,7 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
   <!-- link / svg filter color:
   HSL: 0° 50% 50%; RGB: 191 64 64; Hex: #BF4040; RGBA: 0.749 0.250 0.250 0 -->
 
-  <svg>
+  <svg width=\"0\" height=\"0\">
     <filter id=\"colorize\" color-interpolation-filters=\"sRGB\" >
       <feColorMatrix type=\"matrix\"
        values=\"0.251 0 0 0 0.749
@@ -335,7 +335,7 @@ class __TwigTemplate_06992e35865003eb65b522dac03a9c14cdccdcf8ff0401bf4212d533e98
     </filter>
   </svg>
 
-  <svg>
+  <svg width=\"0\" height=\"0\">
     <filter id=\"contrast\">
       <feComponentTransfer>
         <feFuncR type=\"linear\" slope=\"2\" intercept=\"-(0.5 * 1) + 0.5\"/>
