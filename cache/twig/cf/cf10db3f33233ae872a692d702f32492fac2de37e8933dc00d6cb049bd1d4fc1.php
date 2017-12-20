@@ -60,7 +60,7 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
         <div class=\"biopic-main\">
           ";
         // line 53
-        echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "ryan1-b.jpg", array(), "array"), "grayscale", array(), "method");
+        echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "ryan2.jpg", array(), "array"), "grayscale", array(), "method");
         echo "
         </div>
 
@@ -328,7 +328,7 @@ class __TwigTemplate_8808cf91b721d893ced9905ba92ef8eb1e420c8a71c03ba508259e9c508
         {% block showcase %}{% endblock %}
 
         <div class=\"biopic-main\">
-          {{ page.media['ryan1-b.jpg'].grayscale() }}
+          {{ page.media['ryan2.jpg'].grayscale() }}
         </div>
 
 
