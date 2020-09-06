@@ -17,7 +17,7 @@
         <!-- my css additions -->
         {% do assets.addCss('theme://css/main-body.css', 102) %}
         {% do assets.addCss('theme://css/header.css', 101) %}
-        
+
 
     {% endblock %}
     {{ assets.css() }}
@@ -43,7 +43,7 @@
 
         <br><br>
 
-        <div>
+        <div class="cont">
         {% block content %}
         <p>stuff!</p>
         {% endblock %}

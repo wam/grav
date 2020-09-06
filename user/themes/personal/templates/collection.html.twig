@@ -14,8 +14,8 @@
   <section class="p-grid2">
      {% for mediaitem in page.header.mediaitems %}
 
-         <article class="item2">
-          <div class="pik2b" style="background-image:url({{ mediaitem.image }});">
+         <article class="item2" >
+          <div tabindex="0" class="pik2b" style="background-image:url({{ mediaitem.image }});">
             {{ mediaitem.frame }}
           </div>
           <div class="words">
@@ -33,14 +33,14 @@
 {% endif %}
 
 {% if page.header.items %}
-  <section class="p-grid">
+  <section class="p-grid" >
      {% for item in page.header.items %}
 
-         <article class="item">
-         <a href="{{ item.link }}"><div class="pik">
+         <article class="item" >
+         <a href="{{ item.link }}"><div class="pik" tabindex="0">
 					 {{ page.media[item.image].html() }}
          </div></a>
-         <div class="words">
+         <div class="words" >
            <a href="{{ item.link }}"><p class="title">{{ item.hed }}</a></p>
            <p class="sub">{{ item.dek }}</p>
          </div>
@@ -71,13 +71,26 @@
     </filter>
   </svg>
 
+  <!-- link / svg filter color:
+  HSL: 0° 50% 50%; RGB: 191 64 64; Hex: #BF4040; RGBA: 0.749 0.250 0.250 0 -->
+
   <svg>
-    <filter id="colorize" color-interpolation-filters="sRGB">
+    <filter id="colorize" color-interpolation-filters="sRGB" >
       <feColorMatrix type="matrix"
        values="0.251 0 0 0 0.749
                0.75 0 0 0 0.25
                0.75 0 0 0 0.25
                0 0 0 1 0" />
+    </filter>
+  </svg>
+
+  <svg>
+    <filter id="contrast">
+      <feComponentTransfer>
+        <feFuncR type="linear" slope="2" intercept="-(0.5 * 1) + 0.5"/>
+        <feFuncG type="linear" slope="2" intercept="-(0.5 * 1) + 0.5"/>
+        <feFuncB type="linear" slope="2" intercept="-(0.5 * 1) + 0.5"/>
+      </feComponentTransfer>
     </filter>
   </svg>
 
