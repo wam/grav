@@ -44,7 +44,8 @@ h2 {
   display: grid;
   margin: 0 auto;
   /*grid-template-columns: repeat(auto-fill, minmax(150px 30vw));*/
-  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-columns: repeat(3, 1fr);*/
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 35vw;
   grid-gap: 1rem;
 }
@@ -65,6 +66,62 @@ h2 {
 
 }
 
+.item2 {
+  /*display: grid;*/
+  /*height: 35vw;*/
+  /*grid-template-columns: 20vw;*/
+
+  /*grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 1fr;*/
+
+  /*grid-template-rows: minmax(60px auto);*/
+
+}
+
+
+.pik2 {
+  /*fallback*/
+  display: inline-block;
+  /*actual*/
+  display: inline-flex;
+  background-position: center;
+  background-size: 100% 100%;
+  filter: url(#grayscale-filter);
+}
+.pik2:hover, .pik2:active, .pik2:focus {
+  filter:none;
+}
+
+
+.pik2b {
+  /*fallback*/
+  /*display: inline-block;*/
+  /*actual*/
+  /*display: inline-flex;*/
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+  filter: url(#grayscale-filter);
+}
+.pik2b:hover, .pik2b:active, .pik2b:focus {
+  filter:none;
+}
+
+.pik2b iframe {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.colorz:hover, .colorz:active, .colorz:focus {
+  filter: url(#colorize);
+}
+
 /*image container*/
 .pik {
   position: relative;
@@ -72,7 +129,7 @@ h2 {
   padding-bottom: 100%;
   overflow: hidden;
   border-radius: 3px;
-
+  filter: url(#grayscale-filter);
   /*max-width: 20vw;
   max-height: 20vw;*/
 }
@@ -83,6 +140,11 @@ h2 {
   top: 0; bottom: 0; left: 0; right: 0;
 }
 
+.pik:hover, .pik:active, .pik:focus {
+  filter: url(#colorize);
+
+  /*filter:none;*/
+}
 
 /*fl w-100 w-50-m  w-25-ns pa2-ns*/
 /*.p-grid article {
