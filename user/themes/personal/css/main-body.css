@@ -1,0 +1,16 @@
+body {
+  --linkColor: hsl(0, 50%, 50%);
+  --mainColor: hsl(208, 50%, 50%);
+  font-family: 'Avenir Next';
+  background-color: var(--mainColor);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--linkColor);
+}

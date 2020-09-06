@@ -1,0 +1,157 @@
+
+
+
+/** {box-sizing: border-box;}*/
+
+
+.things {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*flex fallback*/
+
+.p-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/*grid*/
+
+.p-grid {
+  display: grid;
+  margin: 0 auto;
+  /*grid-template-columns: repeat(auto-fill, minmax(150px 30vw));*/
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 35vw;
+  grid-gap: 1rem;
+}
+
+
+.p-grid2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/*grid*/
+
+.p-grid2 {
+  display: grid;
+  margin: 0 auto;
+  /*grid-template-columns: repeat(auto-fill, minmax(150px 30vw));*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 35vw;
+  grid-gap: 1rem;
+}
+
+
+
+
+/*item*/
+.item {
+  /*display: grid;*/
+  /*height: 35vw;*/
+  /*grid-template-columns: 20vw;*/
+
+  /*grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 1fr;*/
+
+  /*grid-template-rows: minmax(60px auto);*/
+
+}
+
+/*image container*/
+.pik {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+
+  /*max-width: 20vw;
+  max-height: 20vw;*/
+}
+
+/*image itself*/
+.pik img {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+
+
+/*fl w-100 w-50-m  w-25-ns pa2-ns*/
+/*.p-grid article {
+
+}*/
+
+/*ph2 ph0-ns pb3 link db*/
+.words {
+  /*text-decoration: none;*/
+  padding-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+/*f5 f4-ns mb0 black-90*/
+.title {
+  color: rgba(0, 0, 0, .9);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/*f6 f5 fw4 mt2 black-60*/
+.sub {
+  color: rgba(0, 0, 0, .6);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.list2 {
+  margin-top: 2rem;
+  margin-left: 38vw;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  list-style-type: none;
+}
+
+
+
+
+
+/*
+
+.words {
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.words:link, .words:visited {
+    transition: color .15s ease-in;
+}
+
+.words:hover {
+    transition: color .15s ease-in;
+}
+
+.words:active {
+    transition: color .15s ease-in;
+}
+
+.words:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
+}*/

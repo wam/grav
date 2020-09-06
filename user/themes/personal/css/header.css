@@ -1,0 +1,277 @@
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -.05em;
+  font-weight: 800;
+  margin: 0.5rem 0.8rem 2rem 0.8rem;
+  line-height: 1.3;
+}
+/*
+.nameLogo {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nameLogo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.myLogo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.nameLogo a:hover,
+.nameLogo a:focus {
+  color: var(--linkColor);
+}
+
+.myLogo a:hover,
+.myLogo a:focus {
+  color: var(--linkColor);
+}*/
+
+
+
+
+.first {
+  letter-spacing: 0.03em;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* Button styling */
+.menu-toggle {
+  display: inline-flex;
+  outline: none;
+  flex: auto;
+  text-decoration: none;
+  margin: 0.5rem 0.8rem 2rem 0.8rem;
+  padding-right: 0.3em;
+  line-height: 1.3;
+  font-size: 2.3rem;
+  justify-content: center;
+  color: #000000;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #c00;
+}
+
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+.main-menu {
+  position: absolute;
+  top: -100vh;
+  left: 14vw;
+  overflow-x: visible;
+  transition: top 0.25s ease,
+              box-shadow 0.25s ease;
+  z-index: 999;
+}
+
+.med-nav {
+  display: none;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 2.5rem 0 0 0;
+  padding: 2.5rem 0 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+          box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  min-height: 100%;
+  width: 70vw;
+  background: #1a1a1a;
+  font-weight: 700;
+}
+
+.main-menu a {
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
+}
+
+.main-menu li:first-child a {
+  border-top: 1px solid #383838;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+}
+
+.main-menu .menu-close {
+  margin: 0 0 0 0;
+  position: absolute;
+  right: 0;
+  top: 1.8rem;
+  border: 0;
+}
+
+/*
+ On small devices, allow it to toggle...
+*/
+/*
+ :target for non-JavaScript
+ aria-expanded="true/false" will be for JavaScript
+*/
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  left: 14vw;
+  top: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.75);
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed;
+  }
+}
+
+/*medium screen size*/
+@media screen and (min-width: 30em) and (max-width: 59em) {
+
+/* display "menu" */
+  .med-nav {
+    display:inline-block;
+  }
+
+/* adjust plus sign to align with text */
+  .mover {
+    display: inline-block;
+    transform: translateY(0.01em);
+  }
+
+/* move text and plus button */
+  .menu-toggle {
+    transform: translateY(-0.02em);
+  }
+
+  .myLogo {
+    font-size: 2.8rem;
+  }
+
+}
+
+/*
+ Larger screen styling
+ Horizontal menu
+*/
+@media screen and (min-width: 59em) {
+  .menu-toggle,
+  .main-menu .menu-close,
+  .nav-symbol, .med-nav {
+    display: none;
+  }
+
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+    /*display: inline-flex;*/
+    left: auto;
+    top: auto;
+    height: auto;
+  }
+
+  .main-menu ul {
+    display: flex;
+    font-size: 1.6em;
+    margin-top: 1rem;
+    font-weight: 600;
+
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+
+  }
+
+  .myLogo {
+    font-size: 3.19rem;
+    margin-right: 4.5vw;
+  }
+
+  .name {
+  display: inline-flex;
+  /*transform: translateY(0.2em);*/
+
+  }
+
+  .main-menu a {
+    color: #000;
+    border: 0 !important; /* Remove borders from off-canvas styling */
+  }
+
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; /* Remove background from off-canvas styling */
+    color: var(--linkColor);
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+}

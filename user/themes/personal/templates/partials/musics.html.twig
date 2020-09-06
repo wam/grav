@@ -1,0 +1,88 @@
+
+
+
+
+<!--
+
+tachyon grid relies on:
+
+p = padding,
+m = margins,
+f = float + inline,
+w = width percentage.
+cf = clearfix + content " " + display table,
+db = display block,
+aspect-ratio = height 0 + position relative,
+aspect-ratio 1x1 = padding-bottom 100%,
+aspect-ratio object = position absolute + wid/height 100%,
+cover = background size cover,
+bg-center = background-repeat no-repeat + background-position center center
+
+-->
+
+
+<section class="p-grid">
+  <article class="item">
+    <a href="https://badfrienddigital.github.io/gro"><div class="pik">
+      {{ page.media['gro1.png'].forceResize(800, 450).grayscale.html() }}
+    </div></a>
+    <div class="words">
+      <p class="title"><a href="https://badfrienddigital.github.io/gro">GRO</a></p>
+      <p class="sub">It's music for your web browser.
+      <br>(It's <a href="https://github.com/badfrienddigital/gro"><strong>open source</strong>.</a>)</p></div>
+  </article>
+  <article class="item">
+    <a href="http://www.badfriendrecords.com"><div class="pik">
+      {{ page.media['bfr_logo.jpg'].resize(350, 350).contrast(10).brightness(-50).html() }}
+    </div></a>
+    <div class="words">
+      <p class="title"><a href="http://www.badfriendrecords.com">Bad Friend Records</a></p>
+      <p class="sub">Rad tunes since 2011.</p>
+    </div>
+  </article>
+  <article class="item">
+    <a href="https://vimeo.com/35831590"><div class="pik">
+      {{ page.media['ntu2.jpg'].grayscale.forceResize(450, 350).brightness(-30).html() }}
+    </div></a>
+    <div class="words">
+      <p class="title"><a href="https://vimeo.com/35831590">Nothing To Undo</a></p>
+      <p class="sub">Included in The Journal of Short Film, this project led to a commissioned video installation. I made the music.</p>
+    </a>
+  </article>
+  <article class="item">
+    <a href="http://tereutereu.com/press-materials"><div class="pik">
+      {{ page.media['tt2.jpg'].resize(300, 300).brightness(-10).html() }}
+    </div></a>
+    <div class="words">
+      <p class="title"><a href="http://tereutereu.com/press-materials">Tereu Tereu</a></p>
+      <p class="sub">We made loud noises with instruments.</p>
+    </div>
+  </article>
+  <article class="item">
+    <a href="https://vimeo.com/100470649"><div class="pik">
+      {{ page.media['vig1.png'].forceResize(750, 450).grayscale.contrast(10).html() }}
+    </div></a>
+    <div class="words">
+      <p class="title"><a href="https://vimeo.com/100470649">Fireworks (July 4, 2014)</a></p>
+      <p class="sub">Short vignette of a lovely day.</p>
+    </div>
+  </article>
+  <article class="item">
+    <a href="https://www.youtube.com/watch?v=VNdkZVCEt84"><div class="pik">
+      {{ page.media['lynx1.png'].forceResize(750, 450).grayscale.html() }}
+    </div></a>
+    <div class="words">
+      <p class="title"><a href="https://www.youtube.com/watch?v=VNdkZVCEt84">Spanish Lynx</a></p>
+      <p class="sub">A video I made for a song I wrote.</p>
+    </div>
+  </article>
+  <article class="item">
+    <a href="https://www.youtube.com/watch?v=UYEBWIvYWqo"><div class="pik">
+      {{ page.media['drone1.png'].forceResize(600, 400).grayscale.html() }}
+    </div></a>
+    <div class="words">
+      <p class="title"><a href="https://www.youtube.com/watch?v=UYEBWIvYWqo">Drone Brunch</a></p>
+      <p class="sub">Beeps and boops.</p>
+    </div>
+  </article>
+</section>
