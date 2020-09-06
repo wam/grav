@@ -23,6 +23,7 @@
 
 @media screen and (min-width: 59em) {
 .cDiv {
-  height: 5vw;
+  height: 7vw;
+  /* height: 5vw; */
   }
 }
