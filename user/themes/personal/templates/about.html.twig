@@ -3,10 +3,13 @@
 {% do assets.addCss('theme://css/about.css', 105) %}
 
 {% block content %}
-{% if page.header.hed %}
-<h2>{{ page.header.hed }}</h2>
-{% endif %}
-<div class="about">
-{{ content }}
-</div>
+  <div class="biopic">
+    {{ page.media['ryan1-b.jpg'].grayscale() }}
+  </div>
+  {% if page.header.hed %}
+  <h2>{{ page.header.hed }}</h2>
+  {% endif %}
+  <div class="about">
+    {{ content }}
+  </div>
 {% endblock %}

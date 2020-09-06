@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
     {% include 'partials/metadata.html.twig' %}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -49,20 +49,35 @@
 
         {% block showcase %}{% endblock %}
 
-        {% block body %}
+        <div class="biopic-main">
+          {{ page.media['ryan1-b.jpg'].grayscale() }}
+        </div>
+
+
+
+        <!-- begin blog post block!!! -->
+
+        <!-- {% block body %}
         <article class="bgg pa3 pa5-ns {{ class }}">
         <h2 class="f2">{{ page.header.posting }}</h2>
         <div class="measure lh-copy">
             {% block content %}{% endblock %}
         </div>
         </article>
-        {% endblock %}
+        {% endblock %} -->
 
-        {% block footer %}
+        <!-- end blog post block!!!! -->
+
+
+        <!-- begin footer -->
+
+        <!-- {% block footer %}
         <footer id="footer">
               <p>YR FOOTR.</p>
         </footer>
-        {% endblock %}
+        {% endblock %} -->
+
+        <!-- end footer -->
 
       <script>
       {% include 'partials/scribbler_script2.html.twig' %}

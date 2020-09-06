@@ -24,3 +24,13 @@ a:hover,
 a:focus {
   color: var(--linkColor);
 }
+
+
+.biopic-main {
+  display: inline-block;
+  /*actual*/
+  display: inline-flex;
+  border-radius: 3px;
+  margin-left: 25vw;
+  width: calc(100% - 50vw);
+}

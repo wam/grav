@@ -3,7 +3,7 @@ title: projects
 itemhead: things i've done
 items: 
   - link: https://badfrienddigital.github.io/gro
-    image: gro1-b.jpg
+    image: gro1-c.jpg
     hed: GRO
     dek: It's music for your web browser. (It's <a href="https://github.com/badfrienddigital/gro"><strong>open source</strong>.</a>)
   - link: http://www.badfriendrecords.com
